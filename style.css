@@ -12,7 +12,6 @@ body {
     font-family: "Nunito", sans-serif;;
     color: #181818;
     background-color: #FFFFFF;
-    /* font-size: var(--font-size-base); */
     line-height: 1.56;
 }
 
@@ -33,7 +32,6 @@ h2, h3 {
 /* Grid Structure */
 
 body {
-    /* border: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -42,13 +40,6 @@ body {
     padding: 0 1em 0 1em;
     max-width: 58.125em;
 }
-
-/* header, nav, main, section, article {
-    border: 2px solid lightblue;
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-} */
 
 header {
     grid-column: 1 / 3;
@@ -61,7 +52,6 @@ nav {
 }
 
 nav {
-    /* border: 3px solid lightgreen; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -79,13 +69,10 @@ main {
 /* Styles */
 
 header, nav {
-    /* border: 3px solid plum; */
     margin-bottom: 3em;
 }
 
 nav > div {
-    /* border: 3px solid lightblue; */
-    /* width: 5em; */
     padding: 3.2em 0.1em;
 }
 
@@ -113,19 +100,16 @@ nav > div {
 }
 
 header > a > img {
-    /* border: 3px solid black; */
     width: 150px;
     height: 150px;
     cursor: pointer;
 }
 
 main {
-    /* border: 3px solid orange; */
     padding: 0 0 2em 0;
 }
 
 section {
-    /* border: 3px solid black; */
     padding: 2em 0 2em 0;
 }
 
@@ -136,14 +120,6 @@ article {
 p {
     color: #333333;
 }
-
-/* section {
-    padding: 0 1em 0 1em;
-} */
-
-/* .section {
-    padding: 2em 1em 4em 1em;
-} */
 
 .pad {
     padding-top: 0.5em;
@@ -167,7 +143,6 @@ span {
 /* Contact */
 
 .photo {
-    /* border: 2px solid rebeccapurple; */
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -188,7 +163,6 @@ span {
 }
 
 .contact p {
-    /* border: 2px solid greenyellow; */
     color: #666;
     text-decoration: none;
     font-weight: 600;
@@ -197,7 +171,6 @@ span {
 
 @media only screen and (orientation: landscape) {
     body {
-        /* background-color: #aaa */
         padding: 0 2em 0 2em;
     }
 
@@ -207,11 +180,6 @@ span {
 
     h2, h3 {
         font-size: 1.05rem;
-    }
-
-    header, nav {
-        /* border: 3px solid black; */
-        /* padding: 2em; */
     }
 
     .bttn {
@@ -225,10 +193,6 @@ span {
 }
 
 @media only screen and (min-width: 930px) {
-    
-    /* body {
-        background-color: gray;
-    } */
 
     section:first-child {
         display: grid;
@@ -264,19 +228,11 @@ span {
         font-size: 1.1em;
     }
 
-    header, nav {
-        /* border: 3px solid black; */
-        /* padding: 2em; */
-    }
-
     nav > div {
-        /* background-color: lightblue; */
-        /* width: 5em; */
         padding: 3.2em 1.5em;
     }
 
     .bttn {
-        /* border: 2px solid #780dbe; */
         border: 2px solid #bc1823;
         font-weight: 600;
         width: 2.4rem;
