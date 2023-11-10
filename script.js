@@ -1,4 +1,9 @@
 
+// Retrieved from menus/afterEd for next dev
+
+
+
+
 const navSlide = () => {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
@@ -12,7 +17,7 @@ const navSlide = () => {
 
         // Animate Links
         navLinks.forEach((link, index) => {
-        console.log(index);
+        // console.log(index);
         // console.log(index / 7);
         if (link.style.animation)
             link.style.animation = '';
@@ -23,10 +28,6 @@ const navSlide = () => {
 }
 
 navSlide();
-
-
-
-
 
 
 

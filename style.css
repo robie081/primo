@@ -1,4 +1,6 @@
 
+/* Retrieved from menus/afterEd for next dev */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,7 +72,7 @@ nav {
     /* color: #e5e7eb; */
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .nav-active {
@@ -180,7 +182,7 @@ nav {
 
     .nav-links li {
         opacity: 1;
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
 }
