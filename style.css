@@ -1,201 +1,319 @@
 
-/* Retrieved from menus/afterEd for next dev */
+/* Pilates Body & Face Copou */
 
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    /* width: auto; */
-    /* width: 100%; */
-    /* min-width: 100vw; */
-    overflow-x: hidden;
+    /* border: 2px solid black; */
+    color: #202124;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
 
 nav {
     /* border: 2px solid plum; */
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
-    padding: 0 2rem;
-    /* background-color: #ccc; */
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: white;
+    padding: 0 12px;
+    box-shadow: 0 0 5px 0 gray;
+    z-index: 50;
+}
+
+.logo {
+    /* border: 2px solid plum; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+
+.burger {
+    /* border: 2px solid orange; */
+    cursor: pointer;
+    font-size: 23px;
+    display: inline-block;
+    padding: 12px;
+    text-align: left;
+    user-select: none;
+    line-height: 1.5rem;
+    font-family: "Chivo",sans-serif;
     font-weight: 400;
-    /* border-bottom: 1px solid #9ca3af; */
-    overflow: hidden;
+}
+
+.pilates {
+    /* border: 2px solid orange; */
+    cursor: pointer;
+    line-height: normal;
+}
+
+.pilates a {
+    color: #5f9bce;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.one, .two, .three {
+    display: block;
+    height: 2px;
+    background-color: #5f9bce;
+    margin-bottom: 3px;
+    transition: transform .3s,opacity .3s;
+    width: 18px;
+}
+
+/* Burger Animation */
+
+.change .one {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.change .two {
+    opacity: 0;
+}
+
+.change .three {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+
+.panel {
+    display: none;
 }
 
 .nav-links {
     /* border: 2px solid orange; */
     position: absolute;
-    right: 0;
-    height: 90vh;
-    top: 10vh;
-
+    width: 0;
+    height: 99vh;
+    top: 70px;
+    left: 0;
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    width: 50%;
-
-    transform: translateX(100%);
-    /* transition: transform 0.5s ease-in; */
+    background-color: white;
+    box-shadow: inset 0 0 5px 0 gray;
+    transition: 0.3s;
+    overflow-x: hidden;
 }
 
 .nav-links li {
     /* border: 2px solid lightblue; */
-    /* flex: 1; */
+    cursor: pointer;
     list-style: none;
-    /* display: flex; */
-    /* align-items: center; */
-
-    margin: 2rem;
-}
-
-.nav-links li {
-    opacity: 0;
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+    margin: 1rem 0 0 3.7rem;
+    padding: 1.7rem 0 0 0.7rem;
+    text-align: left;
 }
 
 .nav-links a {
-    color: #1f2937;
-    /* color: #e5e7eb; */
+    color: #5f9bce;
     text-decoration: none;
-    letter-spacing: 3px;
-    /* font-weight: 600; */
+    font-family: "Chivo", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.nav-active {
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
+.nav-links li a:hover {
+    color: #64748b;
 }
 
-/* TEROX Travel Hamburger */
+main {
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 70px;
+    text-align: center;
+}
 
-.hamburger {
+.responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.reformer {
+    line-height: 1.5;
+    font-family: "Chivo",sans-serif;
+    font-weight: 400;
+}
+
+.face {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5f9bce;
+    padding: 1rem 0;
+    line-height: 1.3;
+}
+
+.offer {
+    /* border: 2px solid black; */
+    padding: 2.5rem 0;
+}
+
+.btn {
     cursor: pointer;
-    width: 24px;
-    height: 24px;
-    margin: 1rem;
+    text-decoration: none;
+    background-color: #5f9bce;
+    color: #fff;
+    padding: 0.9rem 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    line-height: 1.5;
+    white-space: nowrap;
 }
 
-.one, .two {
-    height: 1px;
-    background-color: black;
-    margin: 7px auto;
-    border-radius: 3px;
-    transition: all 1s;
+.btn:hover {
+    background-color: #64748b;
 }
 
-.change .one {
-    animation: slideInOne 0.5s ease-in-out 0.5s forwards, rotateLineOne 0.5s ease-in-out 1s forwards;
+.superLorem {
+    margin-top: 5rem;
 }
 
-.change .two {
-    animation: slideInTwo 0.5s ease-in-out 0.5s forwards, rotateLineTwo 0.5s ease-in-out 1s forwards;
-}
-
-@keyframes slideInOne {
-    from { translate: 0px 0px; }
-    to { translate: 0px 4px; }
-}
-
-@keyframes rotateLineOne {
-    from { rotate: 0deg; }
-    to { rotate: 45deg; }
-}
-
-@keyframes slideInTwo {
-    from { translate: 0px 0px; }
-    to { translate: 0px -4px; }   
-}
-
-@keyframes rotateLineTwo {
-    from { rotate: 0deg; }
-    to { rotate: -45deg; }
+.lorem {
+    padding: 1rem;
 }
 
 
 /* @media screen and (orientation: landscape)  */
 @media screen and (min-width: 640px) {
-    
-    .nav-links li {
-        margin: 0.875rem;
+
+    .logo {
+        /* border: 2px solid plum; */
+        width: 27rem;
+        margin-left: 3.5rem;
+    }
+
+    .pilates a {
+        font-size: 1.5rem;
+    }
+
+    .switch {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .trio {
+        /* border: 2px solid black; */
+        padding: 2rem 4rem 4rem 4rem;
+    }
+
+    .face {
+        /* border: 2px solid black; */
+        font-size: 56px;
+        line-height: 1.2;
+        word-break: word-break;
+        padding: 3rem 3rem 1rem 3rem;
+    }
+
+    .btn {
+        padding: 0.9rem 2rem;
+    }
+
+    .responsive {
+        width: 75%;
+        height: 50%;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    .superLorem {
+        margin-top: 7rem;
     }
 }
 
 
 @media screen and (min-width: 768px) {
 
-    .hamburger {
-        display: none;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .panel {
+        /* border: 2px solid orange; */
+        display: flex;
+        margin-right: 3rem;
+        justify-content: center;
+        flex-basis: 40%;
     }
 
-    /* First */
-
-    /* .nav-links {
-        height: 10vh;
-        transform: translateX(100%);
-        position: absolute;
-        top: 0;
-        left: 0;
-        flex-direction: row;
+    .panel-links {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 100%;
+    }
+    
+    .panel-links li {
+        /* border: 1px solid orangered; */
+        cursor: pointer;
+        list-style: none;
+        display: flex;
         justify-content: center;
-    } */
+        align-items: center;
+    }
 
-    /* Second */
+    .panel-links li span {
+        margin-bottom: -2px;
+    }
 
-    /* .nav-links {
-        height: 10vh;
-        flex-direction: row;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        right: 50%;
-        transform: translateX(100%);
-    } */
+    .panel-links a {
+        color: #5f9bce;
+        text-decoration: none;
+        font-family: "Chivo", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 8px;
+    }
 
-    /* Third */
+    /* Hover Both the SVG and the Link */
 
-    /* .nav-links {
-        height: 10vh;
-        flex-direction: row;
-        justify-content: center;
-        position: static;
-        transform: translateX(0%);
-        transition: none;
-    } */
-
-    /* Fourth and final */
-
-    .nav-links {
-        height: 10vh;
-        flex-direction: row;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        transform: translateX(0%);
-        transition: none;
+    .panel-links li:hover svg path, 
+    .panel-links li:hover {
+        fill: #64748b;
+        color: #64748b;
     } 
 
-    .nav-links li {
-        /* border: 2px solid lightblue; */
-        opacity: 1;
-        margin: 1rem;
+    .panel-links li:hover a,
+    .panel-links li:hover {
+        color: #64748b;
     }
+
+    /* .panel-links li a:hover {
+        color: #94a3b8;
+    } */
+
+    /* .panel-links li span svg:hover {
+        fill: #94a3b8;
+    } */
 
 }
