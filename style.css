@@ -316,6 +316,10 @@ footer {
     .superLorem {
         margin-top: 7rem;
     }
+
+    .footer-panel-links {
+        flex-basis: 82%;
+    }
 }
 
 
