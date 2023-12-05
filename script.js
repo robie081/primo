@@ -11,10 +11,10 @@ const pilates = () => {
     burger.addEventListener('click', () => {
         burger.classList.toggle('change');
 
-        if (nav.style.width === '400px')
+        if (nav.style.width === '350px')
             nav.style.width = '0px';
         else
-            nav.style.width = '400px';
+            nav.style.width = '350px';
     });
 }
 
