@@ -74,7 +74,7 @@ nav {
     text-decoration: none;
     font-family: "Comfortaa", sans-serif;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -166,7 +166,7 @@ main {
 .face {
     font-family: "Comfortaa", sans-serif;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #5f9bce;
     padding: 1rem 0;
     line-height: 1.3;
