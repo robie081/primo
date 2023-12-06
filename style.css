@@ -317,6 +317,11 @@ footer {
         margin-top: 7rem;
     }
 
+    footer {
+        box-shadow: none;
+        border-top: 1px solid #d1d5db;
+    }
+
     .footer-panel-links {
         flex-basis: 82%;
     }
